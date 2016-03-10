@@ -122,4 +122,4 @@ EXPOSE 8080 5432 5666
 CMD ["/usr/local/bin/dumb-init", "/usr/sbin/run-nrpe.sh"]
 CMD ["/usr/bin/supervisord"]
 #CMD ["/usr/sbin/sshd", "-D"]
-#CMD /usr/sbin/sshd -D & /tomcat_run.sh & /postgis_run.sh
+CMD /usr/sbin/sshd -D & /tomcat_run.sh & /postgis_run.sh
